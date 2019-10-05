@@ -11,7 +11,7 @@ export const startTimeline = (logo, navContainer: HTMLDivElement) => {
     {opacity: 0},
     {opacity: 1, x: 60, ease: Power2.easeInOut},
     "+=1.0"
-  ).staggerTo(navItems, 1, {x: -60}, 0.1, "-=1.5");
+  ).staggerTo(navItems, 1, {x: -50, ease: Power2.easeInOut}, 0.1, "-=1.5");
 
   return tl;
 };

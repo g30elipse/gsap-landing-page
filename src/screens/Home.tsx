@@ -15,8 +15,9 @@ const Home: React.FC<IProps> = props => {
 
   return (
     <div>
-      <div className={classes.imgContainer} ref={ref => (heroImg = ref)}>
+      <div className={classes.imgContainer}>
         <img
+          ref={ref => (heroImg = ref)}
           src="https://images.unsplash.com/photo-1570161766218-f8488ebb8078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
           alt="heroimage"
         />
@@ -28,6 +29,7 @@ const Home: React.FC<IProps> = props => {
 
 const useStyles = makeStyles({
   imgContainer: {
+    perspective: 1000,
     margin: "0 auto",
     "& img": {
       width: "100%"
